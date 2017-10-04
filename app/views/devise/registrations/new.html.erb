@@ -1,7 +1,8 @@
+<%= javascript_include_tag 'https://js.stripe.com/v2/' %>
 <script language="Javascript">
-  Stripe.setPublishableKey("<%= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>");
+  Stripe.setPublishableKey("pk_test_7GQfK44ijPq1xSzXeVBf7KbP");
 </script>
-
+<%#= ENV['STRIPE_TEST_PUBLISHABLE_KEY'] %>
 <%= bootstrap_devise_error_messages! %>
 <div class="panel panel-default devise-bs">
   <div class="panel-heading">
